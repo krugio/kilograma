@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Kilograma</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="description">
+    <meta content="Kilograma" name="Bauru do Porto ">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+    <link rel="shortcut icon" href="">
+
+
+
+   
+    <link href="./css/config/default/app.min.css" rel="stylesheet" type="text/css" id="app-style">
+   
+    <link href="./css/icons.min.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body class="loading" data-layout-mode="horizontal" data-layout-color="light" data-topbar-color="dark"
+    data-menu-position="fixed">
+
+   
+    <div id="wrapper">
+
+
+        <div class="navbar-custom">
+            <div class="container-fluid">
+                <div style="display: flex;justify-content: center;" class="m-1">
+                    <h1 style="color: white;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                        KILOGRAMA</h1>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="content-page">
+            <div class="content">
+
+                <div class="container-fluid">
+
+                  
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box">
+                                <div class="page-title-right">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+             
+                    <div class="row">
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="avatar-sm bg-blue rounded">
+                                                <i class="fa-solid fa-scale-balanced p-1" style="color: azure;font-size: 20px;"></i>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="text-end">
+                                                <h3 class="text-dark my-1"><span data-plugin="counterup" id="totalComprado"></span>kg
+                                                </h3>
+                                                <p class="text-muted mb-1 text-truncate">Kg/Comprados</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div> 
+
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="avatar-sm bg-success rounded">
+                                                <i class="fa-solid fa-comments-dollar p-1" style="color: azure;font-size: 20px;"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="text-end">
+                                                <h3 class="text-dark my-1">R$<span data-plugin="counterup" id="mediaPago">0.00</span>
+                                                </h3>
+                                                <p class="text-muted mb-1 text-truncate">Média Kg/Pago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div> 
+                        </div>
+
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="avatar-sm bg-warning rounded">
+                                                <i class="fa-solid fa-circle-exclamation p-1" style="color: azure;font-size: 20px;"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="text-end">
+                                                <h3 class="text-dark my-1"><span data-plugin="counterup" id="mediaPerda">0</span>%</h3>
+                                                <p class="text-muted mb-1 text-truncate">Média Perda</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div> 
+                        </div>
+
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="avatar-sm bg-info rounded">
+                                                <i class="fa-solid fa-circle-exclamation p-1" style="color: azure;font-size: 20px;"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="text-end">
+                                                <h3 class="text-dark my-1">R$<span data-plugin="counterup" id="kgreal">0.00</span>
+                                                </h3>
+                                                <p class="text-muted mb-1 ">Média Kg/Real</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <h1 style="text-align: center;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"
+                        class="mt-4 mb-3">LANÇAMENTOS <button type="button" class="btn btn-primary"
+                            data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                            style="font-size: 19px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                            + </button></h1>
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div id="cardCollpase5" class="collapse show">
+                                    <div class="table-responsive pt-3" id="tabela">
+                                       
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div> 
+                </div>
+                
+
+            </div> 
+
+        </div> 
+
+       
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <script>document.write(new Date().getFullYear())</script> &copy; Bauru do Porto <a href=""></a>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+       
+
+    </div>
+
+
+    <!-- Modal Lancamentos-->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel"
+                        style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">LANÇAMENTOS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Peso Liquido(KG)</label>
+                        <input type="text" class="form-control" id="inputPL" placeholder="Ex: 1.540">
+                    </div>
+                    <div class="col-12 mt-2">
+                        <label for="inputAddress2" class="form-label">Perdas(KG)</label>
+                        <input type="text" class="form-control" id="inputPerdas" placeholder="3.450">
+                    </div>
+                    <div class="col-12 mt-2">
+                        <label for="inputAddress2" class="form-label">Preço/Kg (PAGO)</label>
+                        <input type="text" class="form-control" id="inputPago" placeholder="Ex: 35.45">
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary w-100" onclick="registrar();" data-bs-dismiss="modal">REGISTRAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+
+
+
+  
+    <script src="./js/vendor.min.js"></script>
+
+
+
+
+   
+    <script src="./js/app.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="https://igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js"></script>
+        <script src="https://cdnjs.com/libraries/jquery.mask"></script>
+
+        <script src="./js/funcoes.js"></script>
+
+</body>
+
+</html>
